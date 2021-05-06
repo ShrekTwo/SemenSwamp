@@ -1,0 +1,2 @@
+D:\zhopa\r\tekkenTrainer\InputTraining\x64\Debug\InputTraining.exe
+D:\zhopa\r\tekkenTrainer\InputTraining\x64\Debug\InputTraining.pdb
