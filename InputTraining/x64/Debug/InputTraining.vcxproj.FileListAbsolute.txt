@@ -1,2 +1,3 @@
 D:\zhopa\r\tekkenTrainer\InputTraining\x64\Debug\InputTraining.exe
 D:\zhopa\r\tekkenTrainer\InputTraining\x64\Debug\InputTraining.pdb
+D:\TekkenProj\SemenSwamp\InputTraining\x64\Debug\InputTraining.exe
