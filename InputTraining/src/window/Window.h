@@ -2,18 +2,25 @@
 #define _WINDOW_H_
 
 #include "SFML/Graphics/RenderWindow.hpp"
+#include "SFML/Window/Event.hpp"
+
 #include <string>
 
 
 class Window {
-	private:
+	public:
+
+		static sf::RenderWindow window;
+		static sf::Color color;
+
 		static int RES_W, RES_H;
 		static std::string winName;
-	public:
+
 		Window(int RES_W, int RES_H, std::string winName);
 		~Window();
 		void Start();
-		void Win_init(int res_x, int res_y, std::string winName);
+		static void win_close();
+		static void win_init();
 };
 
 
