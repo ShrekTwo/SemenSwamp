@@ -1,5 +1,2 @@
 ﻿  Window.cpp
-Window.obj : error LNK2001: неразрешенный внешний символ "public: static int Window::RES_W" (?RES_W@Window@@2HA).
-Window.obj : error LNK2001: неразрешенный внешний символ "public: static int Window::RES_H" (?RES_H@Window@@2HA).
-Window.obj : error LNK2001: неразрешенный внешний символ "public: static class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > Window::winName" (?winName@Window@@2V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A).
-D:\TekkenProj\SemenSwamp\InputTraining\x64\Debug\InputTraining.exe : fatal error LNK1120: неразрешенных внешних элементов: 3
+  InputTraining.vcxproj -> D:\TekkenProj\SemenSwamp\InputTraining\x64\Debug\InputTraining.exe

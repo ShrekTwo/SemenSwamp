@@ -2,7 +2,7 @@
 
 int main() {
 
-	Window mainWin();
+	Window::win_init();
 
 	return 0;
 }

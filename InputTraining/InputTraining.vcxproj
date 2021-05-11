@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\event_handler\EventHandler.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\event_handler\EventHandler.h" />
     <ClInclude Include="src\window\Window.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

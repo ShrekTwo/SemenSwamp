@@ -1,6 +1,8 @@
 #ifndef _WINDOW_H_
 #define _WINDOW_H_
 
+typedef unsigned int uint;
+
 #include "SFML/Graphics/RenderWindow.hpp"
 #include "SFML/Window/Event.hpp"
 
@@ -9,14 +11,15 @@
 
 class Window {
 	public:
+		static const uint RES_W = 1720, RES_H = 1080;
+		static const std::string winName;
 
 		static sf::RenderWindow window;
 		static sf::Color color;
 
-		static int RES_W, RES_H;
-		static std::string winName;
+		
 
-		Window(int RES_W, int RES_H, std::string winName);
+		Window();
 		~Window();
 		void Start();
 		static void win_close();
@@ -24,5 +27,5 @@ class Window {
 };
 
 
-#endif //!_WINDOW_H_
+#endif /*_WINDOW_H_*/
 
