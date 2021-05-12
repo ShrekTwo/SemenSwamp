@@ -21,10 +21,14 @@
   <ItemGroup>
     <ClCompile Include="src\event_handler\EventHandler.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\mechanics\Mechanics.cpp" />
+    <ClCompile Include="src\texture_loader\TextureLoad.cpp" />
     <ClCompile Include="src\window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\event_handler\EventHandler.h" />
+    <ClInclude Include="src\mechanics\Mechanics.h" />
+    <ClInclude Include="src\texture_loader\TextureLoad.h" />
     <ClInclude Include="src\window\Window.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -6,7 +6,6 @@
 
 class EventH {
 	public:
-		static sf::Event event;
 
 		static bool WisPressed;
 		static bool AisPressed;
@@ -18,8 +17,8 @@ class EventH {
 		static bool SisReleased;
 		static bool DisReleased;
 
-		static void eCheck();
-		static sf::Keyboard::Key keyEvents();
+		static void eCheck(sf::Event& event);
+		static void keyEvents(sf::Event& event);
 };
 
 

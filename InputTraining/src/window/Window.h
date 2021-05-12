@@ -4,14 +4,16 @@
 typedef unsigned int uint;
 
 #include "SFML/Graphics/RenderWindow.hpp"
-#include "SFML/Window/Event.hpp"
+#include "../event_handler/EventHandler.h"
+#include "../texture_loader/TextureLoad.h"
 
+#include <iostream>
 #include <string>
 
 
 class Window {
 	public:
-		static const uint RES_W = 1720, RES_H = 1080;
+		static const uint RES_W = 1080, RES_H = 720;
 		static const std::string winName;
 
 		static sf::RenderWindow window;
@@ -21,7 +23,7 @@ class Window {
 
 		Window();
 		~Window();
-		void Start();
+		static void Start();
 		static void win_close();
 		static void win_init();
 };
