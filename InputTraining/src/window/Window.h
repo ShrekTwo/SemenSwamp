@@ -4,8 +4,10 @@
 typedef unsigned int uint;
 
 #include "SFML/Graphics/RenderWindow.hpp"
+
 #include "../event_handler/EventHandler.h"
 #include "../texture_loader/TextureLoad.h"
+#include "../mechanics/Mechanics.h"
 
 #include <iostream>
 #include <string>

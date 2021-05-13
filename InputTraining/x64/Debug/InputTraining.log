@@ -1,8 +1,2 @@
-﻿  EventHandler.cpp
-D:\TekkenProj\SemenSwamp\InputTraining\src\event_handler\EventHandler.cpp(28,19): warning C4353: нестандартное расширение: константа 0 в качестве выражения функции.  Следует заменить на подставляемую функцию "__noop"
-  main.cpp
-  Mechanics.cpp
-  TextureLoad.cpp
-  Window.cpp
-  Создание кода...
+﻿  TextureLoad.cpp
   InputTraining.vcxproj -> D:\TekkenProj\SemenSwamp\InputTraining\x64\Debug\InputTraining.exe

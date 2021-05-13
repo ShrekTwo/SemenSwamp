@@ -52,6 +52,7 @@ void EventH::keyEvents(sf::Event& event) {
 				std::cout << "KEYLOG || W has been pressed:\t" << keylog[0] << std::endl;
 			}
 
+			Mechanic::WASDPress(tLoad::Wkey);
 			WisPressed = true;
 			WisReleased = false;
 			break;
@@ -62,6 +63,7 @@ void EventH::keyEvents(sf::Event& event) {
 				std::cout << "KEYLOG || A has been pressed:\t" << keylog[1] << std::endl;
 			}
 
+			Mechanic::WASDPress(tLoad::Akey);
 			AisPressed = true;
 			AisReleased = false;
 			break;
@@ -72,6 +74,7 @@ void EventH::keyEvents(sf::Event& event) {
 				std::cout << "KEYLOG || S has been pressed:\t" << keylog[2] << std::endl;
 			}
 
+			Mechanic::WASDPress(tLoad::Skey);
 			SisPressed = true;
 			SisReleased = false;
 			break;
@@ -82,6 +85,7 @@ void EventH::keyEvents(sf::Event& event) {
 				std::cout << "KEYLOG || D has been pressed:\t" << keylog[3] << std::endl;
 			}
 
+			Mechanic::WASDPress(tLoad::Dkey);
 			DisPressed = true;
 			DisReleased = false;
 			break;
@@ -100,6 +104,7 @@ void EventH::keyEvents(sf::Event& event) {
 			if (WisPressed) 
 				std::cout << "KEYLOG || W has been released:\t" << keylog[0] << std::endl;
 			
+			Mechanic::WASDRelease(tLoad::Wkey);
 			WisPressed = false;
 			WisReleased = true;
 			break;
@@ -109,6 +114,7 @@ void EventH::keyEvents(sf::Event& event) {
 			if (AisPressed) 
 				std::cout << "KEYLOG || A has been released:\t" << keylog[1] << std::endl;
 
+			Mechanic::WASDRelease(tLoad::Akey);
 			AisPressed = false;
 			AisReleased = true;
 			break;
@@ -118,6 +124,7 @@ void EventH::keyEvents(sf::Event& event) {
 			if (SisPressed)
 				std::cout << "KEYLOG || S has been released:\t" << keylog[2] << std::endl;
 
+			Mechanic::WASDRelease(tLoad::Skey);
 			SisPressed = false;
 			SisReleased = true;
 			break;
@@ -127,6 +134,7 @@ void EventH::keyEvents(sf::Event& event) {
 			if (DisPressed)
 				std::cout << "KEYLOG || D has been released:\t" << keylog[3] << std::endl;
 
+			Mechanic::WASDRelease(tLoad::Dkey);
 			DisPressed = false;
 			DisReleased = true;
 			break;

@@ -11,6 +11,7 @@ sf::Sprite tLoad::Dkey;
 
 float tLoad::spacing = 25.f;
 sf::Vector2f tLoad::scale(5.f, 5.f);
+sf::Vector2f tLoad::pscale(5.2f, 5.2f);
 //static std::vector<sf::Sprite> WASDkeys(4);
 
 void tLoad::tInit() {
@@ -26,7 +27,7 @@ void tLoad::tInit() {
 	Wkey.setTexture(tLoad::texture);
 	Wkey.setTextureRect(sf::IntRect(0, 0, 16, 16));
 	Wkey.setScale(scale);
-	Wkey.setPosition(200.f, 100.f);
+	Wkey.setPosition(300.f, 400.f);
 
 	Akey.setTexture(tLoad::texture);
 	Akey.setTextureRect(sf::IntRect(16, 0, 16, 16));

@@ -20,7 +20,9 @@ class tLoad {
 		static sf::Sprite Skey;
 		static sf::Sprite Dkey;
 
+
 		static sf::Vector2f scale;
+		static sf::Vector2f pscale;
 
 		static float spacing;
 

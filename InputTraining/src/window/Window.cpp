@@ -13,6 +13,7 @@ Window::~Window() {}
 
 void Window::Start() {
 	tLoad::tInit();
+	window.setFramerateLimit(60);
 }
 
 void Window::win_init() {
@@ -20,8 +21,16 @@ void Window::win_init() {
 	
 
 	Window::window.create(sf::VideoMode(Window::RES_W, Window::RES_H), Window::winName);
+
+	Window::Start();
+
 	while (Window::window.isOpen()) {
+
+
 		sf::Event event;
+
+		Mechanic::fpsCounter(window);
+
 		EventH::eCheck(event);
 
 		Window::window.clear(color);
