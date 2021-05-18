@@ -30,6 +30,9 @@
     <ClCompile Include="src\mechanics\Mechanics.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="src\animation\Motion.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\window\Window.h">
@@ -42,6 +45,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="src\mechanics\Mechanics.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="src\animation\Motion.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

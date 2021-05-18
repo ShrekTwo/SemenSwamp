@@ -13,12 +13,16 @@ class tLoad {
 	public:
 
 		static sf::Texture texture;
-		//static sf::Sprite* WASDkeys = new sf::Sprite[4];
+		static sf::Texture Kazuya;
+
+		static sf::IntRect kazSrcRect;
+		
 
 		static sf::Sprite Wkey;
 		static sf::Sprite Akey;
 		static sf::Sprite Skey;
 		static sf::Sprite Dkey;
+		static sf::Sprite Kaz;
 
 
 		static sf::Vector2f scale;

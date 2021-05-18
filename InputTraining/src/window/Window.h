@@ -4,10 +4,12 @@
 typedef unsigned int uint;
 
 #include "SFML/Graphics/RenderWindow.hpp"
+#include "SFML/System/Clock.hpp"
 
 #include "../event_handler/EventHandler.h"
 #include "../texture_loader/TextureLoad.h"
 #include "../mechanics/Mechanics.h"
+#include "../animation/Motion.h"
 
 #include <iostream>
 #include <string>
@@ -21,7 +23,7 @@ class Window {
 		static sf::RenderWindow window;
 		static sf::Color color;
 
-		
+		static sf::Clock clock;
 
 		Window();
 		~Window();

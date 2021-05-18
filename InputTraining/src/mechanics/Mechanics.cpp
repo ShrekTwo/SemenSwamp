@@ -1,7 +1,6 @@
 #include "Mechanics.h"
 
 sf::Color Mechanic::colorGrey(152, 163, 155);
-sf::Clock Mechanic::clock;
 int Mechanic::fpsi;
 
 void Mechanic::WASDPress(sf::Sprite& sprite) {
@@ -16,8 +15,7 @@ void Mechanic::WASDRelease(sf::Sprite& sprite) {
 
 void Mechanic::fpsCounter(sf::RenderWindow& window) {
 
-	float fps = 1.f / clock.getElapsedTime().asSeconds();
-	clock.restart();
+	float fps = 1.f / Window::clock.getElapsedTime().asSeconds();
 
 	fpsi = (int)fps;
 	std::string str = std::to_string(fpsi);

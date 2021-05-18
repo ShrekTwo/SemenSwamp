@@ -3,16 +3,20 @@
 //static sf::Sprite* WASDkeys = new sf::Sprite[4];
 
 sf::Texture tLoad::texture;
+sf::Texture tLoad::Kazuya;
 
 sf::Sprite tLoad::Wkey;
 sf::Sprite tLoad::Akey;
 sf::Sprite tLoad::Skey;
 sf::Sprite tLoad::Dkey;
+sf::Sprite tLoad::Kaz;
 
 float tLoad::spacing = 25.f;
 sf::Vector2f tLoad::scale(5.f, 5.f);
 sf::Vector2f tLoad::pscale(5.2f, 5.2f);
 //static std::vector<sf::Sprite> WASDkeys(4);
+
+sf::IntRect tLoad::kazSrcRect(0, 0, 70, 95);
 
 void tLoad::tInit() {
 	//system("dir");
@@ -44,5 +48,10 @@ void tLoad::tInit() {
 	Dkey.setScale(scale);
 	Dkey.setPosition(Skey.getPosition().x + Dkey.getTexture()->getSize().x + spacing, Skey.getPosition().y);
 
-
+	if (!tLoad::Kazuya.loadFromFile("src/png/kazuya.png"))
+		std::cerr << "TEXTURE LOG || Failed to load a texture (Kaz.png)" << std::endl;
+	
+	Kaz.setTexture(tLoad::Kazuya);
+	Kaz.setTextureRect(kazSrcRect);
+	Kaz.setPosition(300.f, 300.f);
 }

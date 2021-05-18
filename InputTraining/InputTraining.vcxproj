@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\animation\Motion.cpp" />
     <ClCompile Include="src\event_handler\EventHandler.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\mechanics\Mechanics.cpp" />
@@ -26,6 +27,7 @@
     <ClCompile Include="src\window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\animation\Motion.h" />
     <ClInclude Include="src\event_handler\EventHandler.h" />
     <ClInclude Include="src\mechanics\Mechanics.h" />
     <ClInclude Include="src\texture_loader\TextureLoad.h" />

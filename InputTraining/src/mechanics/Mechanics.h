@@ -10,7 +10,6 @@ class Mechanic {
 
 		static int fpsi;
 
-		static sf::Clock clock;
 		static sf::Color colorGrey;
 
 		static void WASDPress(sf::Sprite& sprite);
