@@ -15,6 +15,7 @@ class Motion {
 		static sf::Clock fClock;
 
 		static void kazuyaAnimation();
+		static void kazuyaCrouch();
 };
 
 

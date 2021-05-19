@@ -1,6 +1,8 @@
 #include "Mechanics.h"
 
 sf::Color Mechanic::colorGrey(152, 163, 155);
+
+int Mechanic::state;
 int Mechanic::fpsi;
 
 void Mechanic::WASDPress(sf::Sprite& sprite) {
@@ -22,3 +24,18 @@ void Mechanic::fpsCounter(sf::RenderWindow& window) {
 
 	window.setTitle(str);
 }
+
+int Mechanic::charState() {
+
+	if (EventH::AisPressed && EventH::SisPressed || EventH::SisPressed)
+		state = 3;
+	else if (EventH::AisPressed)
+		state = 2;
+	else
+		state = 1;
+
+	return state;
+}
+//3 - crouch
+//2 - block
+//1 - standing

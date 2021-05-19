@@ -53,5 +53,6 @@ void tLoad::tInit() {
 	
 	Kaz.setTexture(tLoad::Kazuya);
 	Kaz.setTextureRect(kazSrcRect);
+	Kaz.setScale(2.f, 2.f);
 	Kaz.setPosition(300.f, 300.f);
 }
