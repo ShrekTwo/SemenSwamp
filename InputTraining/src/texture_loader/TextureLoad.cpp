@@ -48,7 +48,7 @@ void tLoad::tInit() {
 	Dkey.setScale(scale);
 	Dkey.setPosition(Skey.getPosition().x + Dkey.getTexture()->getSize().x + spacing, Skey.getPosition().y);
 
-	if (!tLoad::Kazuya.loadFromFile("src/png/kazuya.png"))
+	if (!tLoad::Kazuya.loadFromFile("src/png/kazuyaSS.png"))
 		std::cerr << "TEXTURE LOG || Failed to load a texture (Kaz.png)" << std::endl;
 	
 	Kaz.setTexture(tLoad::Kazuya);

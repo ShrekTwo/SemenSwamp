@@ -15,7 +15,7 @@ Window::~Window() {}
 
 void Window::Start() {
 	tLoad::tInit();
-	window.setFramerateLimit(60);
+	window.setFramerateLimit(59);
 }
 
 void Window::win_init() {

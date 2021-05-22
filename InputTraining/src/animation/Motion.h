@@ -12,10 +12,12 @@ class Motion {
 		static void kazuyaStand();
 	public:
 
-		static sf::Clock fClock;
+		//static sf::Clock fClock;
 
 		static void kazuyaAnimation();
 		static void kazuyaCrouch();
+		static void kazuyaGoForward();
+		static void kazuyaGoBack();
 };
 
 
