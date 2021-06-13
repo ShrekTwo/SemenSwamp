@@ -11,7 +11,8 @@ void Motion::kazuyaAnimation() {
 		4 - go forward
 		3 - crouch
 		2 - block
-		1 - standing
+		1 - crouch forward
+		0 - standing
 		*/
 	case 4:
 		kazuyaGoForward();
@@ -21,6 +22,9 @@ void Motion::kazuyaAnimation() {
 		break;
 	case 2:
 		kazuyaGoBack();
+		break;
+	case 1:
+		kazuyaCForward();
 		break;
 	default:
 		kazuyaStand();
@@ -52,10 +56,29 @@ void Motion::kazuyaCrouch() {
 }
 
 void Motion::kazuyaGoForward(){
-	return;
+	tLoad::kazSrcRect.top = 285;
+	if (fClock.getElapsedTime().asSeconds() >= frame) {
+		tLoad::kazSrcRect.left >= 70 ? tLoad::kazSrcRect.left = 0 : tLoad::kazSrcRect.left += 70;
+		fClock.restart();
+	}
+	tLoad::Kaz.setTextureRect(tLoad::kazSrcRect);
 }
 
 
 void Motion::kazuyaGoBack(){
-	return;
+	tLoad::kazSrcRect.top = 190;
+	if (fClock.getElapsedTime().asSeconds() >= frame) {
+		tLoad::kazSrcRect.left >= 70 ? tLoad::kazSrcRect.left = 0 : tLoad::kazSrcRect.left += 70;
+		fClock.restart();
+	}
+	tLoad::Kaz.setTextureRect(tLoad::kazSrcRect);
+}
+
+void Motion::kazuyaCForward() {
+	tLoad::kazSrcRect.top = 380;
+	if (fClock.getElapsedTime().asSeconds() >= frame) {
+		tLoad::kazSrcRect.left >= 70 ? tLoad::kazSrcRect.left = 0 : tLoad::kazSrcRect.left += 70;
+		fClock.restart();
+	}
+	tLoad::Kaz.setTextureRect(tLoad::kazSrcRect);
 }

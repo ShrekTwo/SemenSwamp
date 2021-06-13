@@ -27,14 +27,16 @@ void Mechanic::fpsCounter(sf::RenderWindow& window) {
 
 int Mechanic::charState() {
 
-	if (EventH::DisPressed)
+	if (EventH::DisPressed && !EventH::SisPressed)
 		state = 4; // go forward
-	else if (EventH::AisPressed && EventH::SisPressed || EventH::SisPressed)
+	else if (EventH::AisPressed && EventH::SisPressed || EventH::SisPressed && !EventH::DisPressed)
 		state = 3; // crouch
-	else if (EventH::AisPressed)
+	else if (EventH::AisPressed && !EventH::SisPressed)
 		state = 2; // go back
+	else if (EventH::SisPressed && EventH::DisPressed)
+		state = 1; // crouch forward
 	else
-		state = 1; // neutral
+		state = 0; // neutral
 
 	return state;
 }

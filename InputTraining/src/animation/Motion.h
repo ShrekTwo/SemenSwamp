@@ -18,6 +18,7 @@ class Motion {
 		static void kazuyaCrouch();
 		static void kazuyaGoForward();
 		static void kazuyaGoBack();
+		static void kazuyaCForward();
 };
 
 
